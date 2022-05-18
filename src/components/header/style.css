@@ -1,0 +1,31 @@
+.header-container {
+    display: block;
+    text-align: center;
+    margin: 0px;
+    padding: 0%;
+    border-bottom: 2px solid var(--light);
+}
+
+.logo-container {
+    margin: 80px 15px 0 0;
+    display: inline-block;
+    color: var(--light);
+}
+.logo {
+    color: var(--light);
+    height: 100px;
+    width: 100px;
+    padding: 23px;
+    font-size: 50px;
+    border: 2px solid;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+}
+.rocket {
+    color: var(--secondary);
+}
+
+.title {
+    margin: 0px;
+}

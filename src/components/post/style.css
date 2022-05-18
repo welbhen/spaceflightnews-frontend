@@ -1,0 +1,44 @@
+.post-image-container {
+    width: 40%;
+    height: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    text-align: center;
+    /* ONLY FOR TEST PURPOSES: */
+    border: 1px solid blue;
+    /***************************/
+}
+
+.post-infos-container {
+    width: 40%;
+    max-height: 200px;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    /* ONLY FOR TEST PURPOSES: */
+    border: 1px solid green;
+    /***************************/
+}
+.post-title {
+    display: block;
+    width: 100%;
+}
+.post-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: 100%;
+}
+.post-summary {
+    display: block;
+    width: 100%;
+    text-align: justify;
+}
+.post-see-more {
+    display: block;
+    width: 100%;
+    margin: 6px;
+}

@@ -1,0 +1,47 @@
+.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.search-box,
+.sort-box {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid var(--primary);
+    border-radius: 3px;
+    font-size: 15px;
+}
+.search-box input {
+    border: none;
+}
+.search-box .btn {
+    border: none;
+    font-size: 22px;
+}
+.sort-box {
+    width: 100px;
+}
+.sort-box .btn {
+    border: none;
+}
+
+.sort-items {
+    position: absolute;
+    z-index: 999;
+    top: 80px;
+    right: 80px;
+    border: 1px solid var(--primary);
+    border-radius: 3px;
+}
+.btn-no-border {
+    display: block;
+    margin: 2px;
+    width: 100px;
+    background: inherit;
+    border: none;
+    text-align: left;  
+}
+.btn-last {
+    border-top: 1px solid var(--primary);
+    border-radius: 0;
+    padding-top: 2px;
+}

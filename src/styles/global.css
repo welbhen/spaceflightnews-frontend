@@ -1,0 +1,99 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+/* COLOR PALETTE
+-------------------------------------------------*/
+:root {
+    --primary: #1E2022;
+    --secondary: #302E53;
+    --tertiary: #D07017;
+    --light: #9594a8;
+}
+
+/* Global styles
+-------------------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*.after {
+    box-sizing: inherit;
+}
+body {
+    height: 100%;
+    font-family: 'Roboto Condensed';
+    color: var(--secondary);
+    letter-spacing: -0.01em; /* makes space smaller */
+    background-color: white;
+}
+
+/* TEXT CONFIGS AND STYLES
+-------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 100;
+    /* default: not bold */
+    margin: 0;
+    padding: 0;
+}
+.uppercase-text {
+    text-transform: uppercase;
+}
+.bold-text {
+    font-weight: bold;
+}
+
+
+/* Buttons
+-------------------------------------------------*/
+.btn,
+.btn:focus,
+.btn:active {
+    background: inherit;
+    color: var(--primary);
+    text-decoration: none;
+    padding: 3px;
+    cursor: pointer;
+    border: 1px solid var(--primary);
+    min-height: 27px;
+}
+.btn:hover {
+    background: var(--light);
+    cursor: pointer;
+}
+
+/* Images
+-------------------------------------------------*/
+img {
+    width: 300px;
+    max-height: 200px;
+}
+
+/* Content
+-------------------------------------------------*/
+.home-page {
+    width: 100%;
+    text-align: center;
+}
+.posts-container {
+    margin: 5px 0;
+    display: inline-block;
+    width: 95%;
+    /* ONLY FOR TEST PURPOSES: */
+    border: 1px solid red;
+    /***************************/
+}
+.post {
+    margin: 10px 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    /* ONLY FOR TEST PURPOSES: */
+    border: 1px solid red;
+    /***************************/
+}
