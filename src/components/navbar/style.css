@@ -1,47 +1,68 @@
 .nav-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 160px;
 }
-.search-box,
-.sort-box {
+
+.search-box {
     display: flex;
     flex-wrap: wrap;
     border: 1px solid var(--primary);
     border-radius: 3px;
-    font-size: 15px;
+    padding: 0;
+    margin-right: 25px;
 }
-.search-box input {
-    border: none;
-}
+.search-box input,
 .search-box .btn {
     border: none;
+    padding: 0;
+    margin: 2px;
+}
+.search-box input {
+    padding: 5px;
+}
+.search-box .mdi {
+    margin: 2px;
+    padding: 0;
     font-size: 22px;
 }
-.sort-box {
-    width: 100px;
-}
-.sort-box .btn {
-    border: none;
-}
 
-.sort-items {
-    position: absolute;
-    z-index: 999;
-    top: 80px;
-    right: 80px;
+.sort-box {
     border: 1px solid var(--primary);
     border-radius: 3px;
+    padding: 0;
+    margin-right: 25px;
 }
-.btn-no-border {
+.sort-container > div:last-of-type {
+    margin-top: 5px;
+}
+.sort-hidden {
+    position: absolute;
+}
+.sort-hidden > button:last-of-type {
+    border-top: 1px solid var(--primary);
+    padding-top: 2px;
+}
+.btn-sort-box {
+    background: inherit;
     display: block;
+}
+.btn-sort-box,
+.btn-sort-box:hover,
+.btn-sort-box:active,
+.btn-sort-box:focus,
+.btn-sort,
+.btn-sort:hover,
+.btn-sort:active,
+.btn-sort:focus {
     margin: 2px;
     width: 100px;
-    background: inherit;
     border: none;
     text-align: left;  
 }
-.btn-last {
-    border-top: 1px solid var(--primary);
-    border-radius: 0;
-    padding-top: 2px;
+.btn-sort {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
 }

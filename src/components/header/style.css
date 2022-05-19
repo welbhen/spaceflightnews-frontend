@@ -7,7 +7,7 @@
 }
 
 .logo-container {
-    margin: 80px 15px 0 0;
+    margin: 10px 15px 0 0;
     display: inline-block;
     color: var(--light);
 }
@@ -27,5 +27,5 @@
 }
 
 .title {
-    margin: 0px;
+    margin: 30px;
 }

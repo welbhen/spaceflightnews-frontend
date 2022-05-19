@@ -59,7 +59,7 @@ h5 {
     padding: 3px;
     cursor: pointer;
     border: 1px solid var(--primary);
-    min-height: 27px;
+    height: 27px;
 }
 .btn:hover {
     background: var(--light);
@@ -81,6 +81,7 @@ img {
 }
 .posts-container {
     margin: 5px 0;
+    margin-bottom: 50px;
     display: inline-block;
     width: 95%;
     /* ONLY FOR TEST PURPOSES: */

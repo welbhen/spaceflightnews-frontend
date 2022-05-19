@@ -1,0 +1,29 @@
+.dots,
+.load-btn-container {
+    display: block;
+    text-align: center;
+}
+
+.dots > span {
+    font-size: 75px;
+    color: var(--tertiary);
+}
+
+.btn-load-more,
+.btn-load-more:focus,
+.btn-load-more:active {
+    background: inherit;
+    border: 1px solid var(--tertiary);
+    color: var(--tertiary);
+    border-radius: 4px;
+    font-size: 12px;
+    height: 25px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btn-load-more:hover {
+    background: var(--tertiary);
+    color: var(--primary);
+}

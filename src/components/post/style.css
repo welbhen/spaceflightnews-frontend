@@ -21,24 +21,68 @@
     border: 1px solid green;
     /***************************/
 }
+
 .post-title {
     display: block;
     width: 100%;
 }
+
 .post-badges {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 10px;
+    align-content: center;
+    padding: 1px 30px;
     width: 100%;
+    font-size: 10px;
 }
+.post-badges > span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-badge,
+.btn-badge:focus,
+.btn-badge:active {
+    background: var(--light);
+    font-size: 10px;
+    height: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btn-badge:hover {
+    background: inherit;
+    color: var(--secondary);
+}
+
 .post-summary {
-    display: block;
+    display: flex;
+    justify-content: left;
     width: 100%;
     text-align: justify;
 }
+
 .post-see-more {
-    display: block;
+    display: flex;
+    justify-content: left;
     width: 100%;
-    margin: 6px;
+    margin-top: 4px;
+}
+.btn-more,
+.btn-more:focus,
+.btn-more:active {
+    background: var(--secondary);
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    height: 25px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btn-more:hover {
+    background: var(--light);
+    color: var(--secondary);
 }

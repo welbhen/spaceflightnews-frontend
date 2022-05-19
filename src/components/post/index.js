@@ -21,13 +21,13 @@ const Post = () => {
                 </div>
                 <div className="post-badges">
                     <span>dd/mm/yyyy</span>
-                    <button className="btn">newsSite</button>
+                    <button className="btn btn-badge">newsSite</button>
                 </div>
                 <div className="post-summary">
                     ajsbdjbaubsduabd jasudbabda
                 </div>
                 <div className="post-see-more">
-                    <button className="btn">Ver Mais</button>
+                    <button className="btn btn-more">Ver Mais</button>
                 </div>
             </div>
         </div>
