@@ -1,12 +1,16 @@
+.left-container {
+    margin-right: 1%;
+}
+
 .post-image-container {
     width: 40%;
     height: auto;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-right: 5%;
+    
     text-align: center;
-    /* ONLY FOR TEST PURPOSES: */
+    /* ONLY FOR TEST PURPOSES: 
     border: 1px solid blue;
     /***************************/
 }
@@ -17,14 +21,17 @@
     height: auto;
     display: inline-block;
     text-align: center;
-    /* ONLY FOR TEST PURPOSES: */
+    /* ONLY FOR TEST PURPOSES: 
     border: 1px solid green;
     /***************************/
+    overflow: hidden;    
 }
 
 .post-title {
     display: block;
     width: 100%;
+    max-height: 75px;
+    font-size: 1.3vw;
 }
 
 .post-badges {
@@ -35,25 +42,18 @@
     padding: 1px 30px;
     width: 100%;
     font-size: 10px;
+    height: 20px;
 }
 .post-badges > span {
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
-.btn-badge,
-.btn-badge:focus,
-.btn-badge:active {
+.newsSite {
     background: var(--light);
     font-size: 10px;
     height: 15px;
-    padding-bottom: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.btn-badge:hover {
-    background: inherit;
-    color: var(--secondary);
+    padding: 5px;
 }
 
 .post-summary {
@@ -61,6 +61,9 @@
     justify-content: left;
     width: 100%;
     text-align: justify;
+    max-height: 80px;
+    overflow: hidden;
+    font-size: 1.3vw;
 }
 
 .post-see-more {
@@ -68,6 +71,8 @@
     justify-content: left;
     width: 100%;
     margin-top: 4px;
+    height: 25px;
+    overflow: auto;
 }
 .btn-more,
 .btn-more:focus,

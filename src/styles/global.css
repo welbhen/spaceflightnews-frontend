@@ -84,17 +84,34 @@ img {
     margin-bottom: 50px;
     display: inline-block;
     width: 95%;
-    /* ONLY FOR TEST PURPOSES: */
+    /* ONLY FOR TEST PURPOSES: 
     border: 1px solid red;
     /***************************/
 }
 .post {
-    margin: 10px 0;
+    margin: 50px 0;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 90%;
-    /* ONLY FOR TEST PURPOSES: */
+    /* ONLY FOR TEST PURPOSES: 
     border: 1px solid red;
+    /***************************/
+}
+
+/* Footer
+-------------------------------------------------*/
+.footer-container {
+    background-color: var(--secondary);
+    color: var(--light);
+    width: 95%;
+    display: inline-block;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+    /* ONLY FOR TEST PURPOSES: 
+    border: 1px solid purple;
     /***************************/
 }

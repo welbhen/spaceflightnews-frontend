@@ -10,7 +10,7 @@ const Header = () => {
                 </div>
             </div>
             <div className="title">
-                <h2>Space Flight News</h2>
+                <h2><a href="/">Space Flight News</a></h2>
             </div>          
         </header>
     );

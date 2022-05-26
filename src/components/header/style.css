@@ -29,3 +29,7 @@
 .title {
     margin: 30px;
 }
+.title h2 a {
+    text-decoration: none;
+    color: inherit;
+}

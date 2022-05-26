@@ -1,35 +1,78 @@
 import './style.css';
 
-/* TO-DO:
-    • Add display-flex to align image with post text
+import { useEffect, useState } from 'react';
+
+const Post = (props) => {
+    const date = new Date(props.publishedAt);
+    const formatedDate = ((date.getDate() )) + "/" + ((date.getMonth() + 1)) + "/" + (date.getFullYear());
+
+    const [order, setOrder] = useState("image-left");
+    const setOrderLeft = () => {
+        setOrder("image-left")
+    };
+    const setOrderRight = () => {
+       setOrder("image-right")
+    };
+    useEffect(() => {
+        if(props.order % 2 === 0) {
+            setOrderLeft();
+        }else {
+            setOrderRight();
+        }
+    }, [props.order]);
     
-**************************/
-
-const Post = () => {
-
     return(
         <div className="post">
-            <div className="post-image-container">
-                <img
-                    src="https://www.nasaspaceflight.com/wp-content/uploads/2022/05/article-lead-051422-1170x658.jpg"
-                    alt="Post"
-                />
-            </div>
-            <div className="post-infos-container">
-                <div className="post-title">
-                    <h2 className="bold-text">Tenete ergo quod si servitus</h2>
-                </div>
-                <div className="post-badges">
-                    <span>dd/mm/yyyy</span>
-                    <button className="btn btn-badge">newsSite</button>
-                </div>
-                <div className="post-summary">
-                    ajsbdjbaubsduabd jasudbabda
-                </div>
-                <div className="post-see-more">
-                    <button className="btn btn-more">Ver Mais</button>
-                </div>
-            </div>
+            {
+                order === "image-left" ?
+                <>
+                    <div className="post-image-container left-container">
+                        <img
+                            src={props.imageUrl}
+                            alt="Post"
+                        />
+                    </div>
+                    <div className="post-infos-container">
+                        <div className="post-title">
+                            <h2 className="bold-text">{props.title}</h2>
+                        </div>
+                        <div className="post-badges">
+                            <span>{formatedDate}</span>
+                            <span className="newsSite" >{props.newsSite}</span>
+                        </div>
+                        <div className="post-summary">
+                            {props.summary}
+                        </div>
+                        <div className="post-see-more">
+                            <a className="btn btn-more" href={props.url} target="_blank" rel="noreferrer">Ver Mais</a>
+                        </div>
+                    </div>
+                </>
+                :
+                <>
+                    <div className="post-infos-container  left-container">
+                        <div className="post-title">
+                            <h2 className="bold-text">{props.title}</h2>
+                        </div>
+                        <div className="post-badges">
+                            <span>{formatedDate}</span>
+                            <span className="newsSite" >{props.newsSite}</span>
+                        </div>
+                        <div className="post-summary">
+                            {props.summary}
+                        </div>
+                        <div className="post-see-more">
+                            <a className="btn btn-more" href={props.url} target="_blank" rel="noreferrer">Ver Mais</a>
+                        </div>
+                    </div>
+                    <div className="post-image-container">
+                        <img
+                            src={props.imageUrl}
+                            alt="Post"
+                        />
+                    </div>
+                </>
+            }
         </div>
     );
 };

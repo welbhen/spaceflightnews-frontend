@@ -1,0 +1,16 @@
+.footer-element {
+    display: block;
+}
+
+.footer-element h5,
+.footer-element a {
+    display: inline-block;
+}
+
+.footer-element a {
+    text-decoration: none;
+    color: var(--tertiary);
+}
+.footer-element a:hover {
+    color: white;
+}
